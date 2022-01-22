@@ -1,0 +1,63 @@
+.navigation {
+  background-color: black;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  flex-direction: row;
+}
+@media screen and (max-width: 800px) {
+  .navigation {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 24px;
+    box-sizing: border-box;
+    height: 52px;
+  }
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbutton {
+  border: none;
+  background-color: transparent;
+
+  height: 52px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+  .navbutton {
+    flex-direction: column;
+    width: 72px;
+    font-size: 12px;
+    padding-top: 8px;
+  }
+}
+
+.navbutton > :first-child {
+  margin: 0 16px;
+}
+
+@media screen and (max-width: 800px) {
+  .navbutton > :first-child {
+    margin-bottom: 2px;
+  }
+}
+.navitem {
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+.navitemActive {
+  padding-left: 10px;
+  padding-right: 15px;
+  color: #fabc6b !important;
+}
