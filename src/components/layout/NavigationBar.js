@@ -22,9 +22,16 @@ function NavigationBar() {
 
   return (
     <div className={classes.navigation}>
+      <div className={classes.logoNavBar}>
+        <img src="./logo192.png" width={35} height={35} />
+        <span className={classes.spaceBetween}></span>
+        <img src="./logo_name.png" width={223} height={35} />
+      </div>
       <NavLink
         className={(navData) =>
-          navData.isActive ? classes.navitemActive : classes.navitem
+          navData.isActive
+            ? [classes.navitemActive, classes.pushItems].join(" ")
+            : [classes.navitem, classes.pushItems].join(" ")
         }
         to="/"
       >

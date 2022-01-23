@@ -51,6 +51,7 @@
     margin-bottom: 2px;
   }
 }
+
 .navitem {
   padding-left: 10px;
   padding-right: 15px;
@@ -60,4 +61,27 @@
   padding-left: 10px;
   padding-right: 15px;
   color: #fabc6b !important;
+}
+
+.logoNavBar {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  justify-content: space-between;
+}
+
+.spaceBetween {
+  width: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .logoNavBar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .pushItems {
+    margin-left: auto;
+  }
 }
