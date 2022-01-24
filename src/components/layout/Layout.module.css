@@ -1,15 +1,21 @@
 .main {
   display: flex;
-  height: 100vh;
   flex-direction: column;
-}
-@media screen and (max-width: 800px) {
-  .main {
-    flex-direction: column-reverse;
-  }
 }
 
 .content {
   flex: 1;
-  padding: 1rem;
+  background-color: blue;
+  max-width: 1032px;
+  width: 1000px;
+  align-self: center;
+}
+
+@media screen and (max-width: 1032px) {
+  .content {
+    flex: 1;
+    background-color: blue;
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
