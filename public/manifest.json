@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "https://instant-pot-cookery.herokuapp.com/",
+  "start_url": "https://instant-pot-cookery-nkcon.ondigitalocean.app/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
