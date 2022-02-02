@@ -1,0 +1,19 @@
+.searchBar {
+  width: 100%;
+  width: -moz-available; /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+  width: stretch;
+  margin: 1.5rem 1.5rem 0 1.5rem;
+  padding: 0.8rem 3rem 0.8rem 2%;
+  border-radius: 10px;
+  border: 0px;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  background: url("/public/img/icons8-search-24.png") no-repeat right;
+  background-color: white;
+  background-size: 48px;
+}
+
+input:focus {
+  outline: none;
+}

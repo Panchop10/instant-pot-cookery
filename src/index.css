@@ -5,3 +5,30 @@ body {
   margin: 0;
   background-color: #fcf3f6;
 }
+
+/* do not group these rules */
+*::-webkit-input-placeholder {
+  color: #b3b3b3;
+}
+*:-moz-placeholder {
+  /* FF 4-18 */
+  color: #b3b3b3;
+  opacity: 1;
+}
+*::-moz-placeholder {
+  /* FF 19+ */
+  color: #b3b3b3;
+  opacity: 1;
+}
+*:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #b3b3b3;
+}
+*::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #b3b3b3;
+}
+*::placeholder {
+  /* modern browser */
+  color: #b3b3b3;
+}

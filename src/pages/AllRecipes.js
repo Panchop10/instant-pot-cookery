@@ -1,8 +1,15 @@
 //import logo from "./logo.png";
+import classes from "./AllRecipesPage.module.css";
 
 function AllRecipesPage() {
   return (
     <section>
+      <input
+        className={classes.searchBar}
+        type="text"
+        name="name"
+        placeholder="search here"
+      />
       <h1>All Recipes</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et
