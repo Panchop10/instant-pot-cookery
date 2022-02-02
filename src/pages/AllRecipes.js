@@ -4,6 +4,7 @@ import classes from "./AllRecipesPage.module.css";
 function AllRecipesPage() {
   return (
     <section>
+      <div className={classes.topBackground}></div>
       <input
         className={classes.searchBar}
         type="text"

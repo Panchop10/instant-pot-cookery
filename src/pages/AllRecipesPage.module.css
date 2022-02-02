@@ -17,3 +17,12 @@
 input:focus {
   outline: none;
 }
+
+.topBackground {
+  position: absolute;
+  max-width: 1032px;
+  width: 100%;
+  z-index: -1;
+  background-color: #fabc6b;
+  height: 400px;
+}
