@@ -1,0 +1,71 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 280px;
+  height: 260px;
+  background-color: #fcf3f6;
+  margin: 0 15px 0 15px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.card:first-child {
+  margin: 0 15px 0 5px;
+}
+.card:last-child {
+  margin: 0 5px 0 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .card:first-child {
+    margin: 0 15px 0 25px;
+  }
+  .card:last-child {
+    margin: 0 25px 0 15px;
+  }
+}
+
+.cardImage {
+  width: 280px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.cardInfo {
+  padding: 5px 10px 5px 10px;
+}
+
+.cardTitle {
+  font-size: 0.9rem;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.cardRate {
+  margin: 5px 0 5px 0;
+}
+
+.cardRecipeDetails {
+  display: flex;
+  flex-direction: row;
+}
+
+.detailsCombo {
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+}
+
+.detailsTitle {
+  font-size: 0.8rem;
+}
+
+.detailsInfo {
+  font-size: 0.8rem;
+  font-weight: bold;
+}

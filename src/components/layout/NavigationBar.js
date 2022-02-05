@@ -1,8 +1,10 @@
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { faClipboardList } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHome,
+  faHeart,
+  faClipboardList,
+} from "@fortawesome/free-solid-svg-icons";
 
 import classes from "./NavigationBar.module.css";
 
@@ -23,9 +25,19 @@ function NavigationBar() {
   return (
     <div className={classes.navigation}>
       <div className={classes.logoNavBar}>
-        <img src="./logo192.png" width={35} height={35} />
+        <img
+          src="./logo192.png"
+          alt="Instant Pot Logo"
+          width={35}
+          height={35}
+        />
         <span className={classes.spaceBetween}></span>
-        <img src="./logo_name.png" width={223} height={35} />
+        <img
+          src="./logo_name.png"
+          alt="Instant Pot Cookery"
+          width={223}
+          height={35}
+        />
       </div>
       <NavLink
         className={(navData) =>
