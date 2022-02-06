@@ -4,6 +4,7 @@ import classes from "./AllRecipesPage.module.css";
 import HorizontalSlider from "../components/horizontal-slider/HorizontalSlider";
 import SectionTitle from "../components/section-title/SectionTitle";
 import CategoriesMenu from "../components/categories-menu/CategoriesMenu";
+import RecipeCard from "../components/recipe-card/RecipeCard";
 
 const items = [
   {
@@ -150,8 +151,13 @@ function AllRecipesPage() {
         subtitle="Choose one of our categories"
       />
       <CategoriesMenu data={categories} />
+      <SectionTitle title="RECIPES" subtitle="Check out our cataloge" />
 
-      {/* <img src={logo} width={100} height={100} /> */}
+      <div className={classes.allrecipes}>
+        {items.map((item, idx) => (
+          <RecipeCard key={idx} data={item} />
+        ))}
+      </div>
     </section>
   );
 }

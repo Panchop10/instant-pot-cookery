@@ -3,7 +3,7 @@
   width: -moz-available; /* WebKit-based browsers will ignore this. */
   width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
   width: stretch;
-  margin: 1.5rem 1.5rem 0 1.5rem;
+  margin: 1.5rem 1rem 0 1rem;
   padding: 0.8rem 3rem 0.8rem 2%;
   border-radius: 10px;
   border: 0px;
@@ -25,4 +25,22 @@ input:focus {
   z-index: -1;
   background-color: #fabc6b;
   height: 250px;
+}
+
+.allrecipes {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .allrecipes {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
 }
